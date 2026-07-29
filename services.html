@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | TBM Power</title>
+  <meta name="description" content="Explore our electrical engineering services: substation installation, power distribution, SCADA industrial automation, preventive maintenance, energy solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+    <div style="color: var(--white); font-weight: 600;">TBM POWER</div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="Images/Logo.jpg" alt="TBM Power Logo" class="logo-img">
+        <span>TBM Power</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container reveal fade-up">
+      <h1 class="section-title">Our Engineering Services</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Services</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES DETAILED LIST -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">End-to-End Solutions</div>
+        <h2 class="section-title">Industrial Power & Automation Expertise</h2>
+        <p class="section-subtitle">Full lifecycle engineering support from conceptual design and load calculation to high-voltage commissioning.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 4rem;">
+
+        <!-- Service Item 1 -->
+        <div class="about-grid reveal fade-up">
+          <div class="about-image-wrap">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <div class="placeholder-label">[Electrical Equipment Placeholder]</div>
+              <div class="placeholder-subtext">High Voltage Electrical Installation & Cable Bus Assembly</div>
+            </div>
+          </div>
+          <div>
+            <div class="badge-tag">Service 01</div>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Electrical Installation & Grid Connection</h2>
+            <p style="color: var(--gray-600); margin-bottom: 1rem;">We perform heavy industrial electrical cabling, cable tray installation, outdoor switchyard construction, and transformer connections under strict IEEE and IEC compliance.</p>
+            <ul style="margin-bottom: 1.5rem; color: var(--navy-900); font-weight: 500;">
+              <li>✔ High Voltage (11kV - 230kV) Cable Termination & Splicing</li>
+              <li>✔ Busduct System Installation & Megger Insulation Testing</li>
+              <li>✔ Earthing / Ground Grid Design & Resistance Measurement</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Inquire About Installation</a>
+          </div>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="about-grid reveal fade-up" style="direction: rtl;">
+          <div class="about-image-wrap" style="direction: ltr;">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/></svg>
+              <div class="placeholder-label">[Transformer Placeholder]</div>
+              <div class="placeholder-subtext">Power Distribution Substation & Switchgear Unit</div>
+            </div>
+          </div>
+          <div style="direction: ltr;">
+            <div class="badge-tag">Service 02</div>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Turnkey Power Distribution Systems</h2>
+            <p style="color: var(--gray-600); margin-bottom: 1rem;">Engineering robust power distribution networks for heavy manufacturing facilities, datacenters, and chemical processing plants.</p>
+            <ul style="margin-bottom: 1.5rem; color: var(--navy-900); font-weight: 500;">
+              <li>✔ Air Insulated (AIS) & Gas Insulated (GIS) Substations</li>
+              <li>✔ Main Distribution Boards (MDB) & Sub-Main Distribution</li>
+              <li>✔ Automatic Transfer Switches (ATS) for Uninterrupted Backup</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Inquire About Distribution</a>
+          </div>
+        </div>
+
+        <!-- Service Item 3 -->
+        <div class="about-grid reveal fade-up">
+          <div class="about-image-wrap">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <div class="placeholder-label">[Electrical Equipment Placeholder]</div>
+              <div class="placeholder-subtext">Industrial PLC Cabinet & SCADA Workstation</div>
+            </div>
+          </div>
+          <div>
+            <div class="badge-tag">Service 03</div>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">SCADA & Industrial Automation</h2>
+            <p style="color: var(--gray-600); margin-bottom: 1rem;">Complete process control, telemetry monitoring, PLC programming (Siemens, Allen-Bradley, Schneider), and Human-Machine Interfaces (HMI).</p>
+            <ul style="margin-bottom: 1.5rem; color: var(--navy-900); font-weight: 500;">
+              <li>✔ Custom PLC & DCS Architecture Development</li>
+              <li>✔ Real-Time SCADA Energy Monitoring Dashboards</li>
+              <li>✔ Motor Control Center (MCC) & VFD Synchronization</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Inquire About Automation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <img src="Images/Logo.jpg" alt="TBM Power Logo" class="logo-img">
+            <span>TBM Power</span>
+          </a>
+          <p>Delivering heavy industrial electrical engineering, high-voltage substation solutions, and smart grid automation across global industries.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Electrical Installation</a>
+            <a href="services.html">Power Distribution</a>
+            <a href="services.html">Industrial Automation</a>
+            <a href="services.html">Maintenance Services</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links" style="color: var(--gray-400);">
+            <p>HQ: Industrial District, NY 10001</p>
+            <p>Phone: +1 (800) 555-VOLT</p>
+            <p>Email: info@tbmpower.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 TBM Power Solutions. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>

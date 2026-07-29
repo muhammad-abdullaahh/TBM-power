@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Projects | TBM Power</title>
+  <meta name="description" content="Explore our portfolio of high-voltage substations, industrial automation, SCADA deployments, and power distribution projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+    <div style="color: var(--white); font-weight: 600;">TBM POWER</div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="Images/Logo.jpg" alt="TBM Power Logo" class="logo-img">
+        <span>TBM Power</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container reveal fade-up">
+      <h1 class="section-title">Projects Portfolio</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Projects</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PORTFOLIO -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Case Studies</div>
+        <h2 class="section-title">Industrial Infrastructure Showcase</h2>
+        <p class="section-subtitle">Real-world power engineering achievements built with rigorous safety standards and precision execution.</p>
+      </div>
+
+      <div class="gallery-filter-nav reveal fade-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="substation">Substations</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+        <button class="filter-btn" data-filter="renewable">Renewable</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card gallery-item reveal fade-up" data-category="substation">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">132kV GIS Substation Yard</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Substations & Transmission</div>
+            <h3>132kV Substation Turnkey Expansion</h3>
+            <p>Design, civil works, GIS switchgear assembly, relay protection, and high-voltage grid energization.</p>
+            <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="document.getElementById('galleryModal').classList.add('active'); document.getElementById('modalPlaceholderLabel').textContent='[Project Image Placeholder] - 132kV Substation Expansion';">View Case Details</button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card gallery-item reveal fade-up delay-100" data-category="automation">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">Steel Plant SCADA & MCC Control</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Industrial Automation</div>
+            <h3>Automated Steel Rolling Mill PLC System</h3>
+            <p>Siemens S7-1500 PLC migration, redundant SCADA workstations, motor control centers (MCC), and VFD drive synchronization.</p>
+            <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="document.getElementById('galleryModal').classList.add('active'); document.getElementById('modalPlaceholderLabel').textContent='[Project Image Placeholder] - Steel Plant SCADA';">View Case Details</button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card gallery-item reveal fade-up delay-200" data-category="renewable">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">5MW Industrial Solar Grid</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Renewable Energy</div>
+            <h3>5MW Microgrid & Solar Integration</h3>
+            <p>Hybrid solar rooftop array with automated power factor control panels reducing grid dependency by 42%.</p>
+            <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="document.getElementById('galleryModal').classList.add('active'); document.getElementById('modalPlaceholderLabel').textContent='[Project Image Placeholder] - 5MW Solar Grid';">View Case Details</button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card gallery-item reveal fade-up" data-category="substation">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">33kV Chemical Refinery Distribution</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Substations & Transmission</div>
+            <h3>Chemical Plant Power Revamp</h3>
+            <p>Replacement of legacy oil breakers with explosion-proof 33kV vacuum switchgears and dual power feeds.</p>
+            <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="document.getElementById('galleryModal').classList.add('active'); document.getElementById('modalPlaceholderLabel').textContent='[Project Image Placeholder] - Chemical Plant Revamp';">View Case Details</button>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card gallery-item reveal fade-up delay-100" data-category="automation">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">Pharmaceutical Cleanroom Power System</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Industrial Automation</div>
+            <h3>Pharma Cleanroom Emergency Power ATS</h3>
+            <p>Instantaneous dual-redundant ATS setup with static UPS backup ensuring continuous climate control.</p>
+            <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="document.getElementById('galleryModal').classList.add('active'); document.getElementById('modalPlaceholderLabel').textContent='[Project Image Placeholder] - Pharma Cleanroom ATS';">View Case Details</button>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card gallery-item reveal fade-up delay-200" data-category="renewable">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">Containerized Battery Energy Storage</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Renewable Energy</div>
+            <h3>2MWh Battery Storage BESS Installation</h3>
+            <p>Grid-scale lithium battery storage system providing peak shaving and harmonic distortion filtering.</p>
+            <button class="btn btn-outline" style="width: 100%; margin-top: 0.5rem;" onclick="document.getElementById('galleryModal').classList.add('active'); document.getElementById('modalPlaceholderLabel').textContent='[Project Image Placeholder] - 2MWh Battery Storage';">View Case Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <img src="Images/Logo.jpg" alt="TBM Power Logo" class="logo-img">
+            <span>TBM Power</span>
+          </a>
+          <p>Delivering heavy industrial electrical engineering, high-voltage substation solutions, and smart grid automation across global industries.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Electrical Installation</a>
+            <a href="services.html">Power Distribution</a>
+            <a href="services.html">Industrial Automation</a>
+            <a href="services.html">Maintenance Services</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links" style="color: var(--gray-400);">
+            <p>HQ: Industrial District, NY 10001</p>
+            <p>Phone: +1 (800) 555-VOLT</p>
+            <p>Email: info@tbmpower.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 TBM Power Solutions. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox -->
+  <div class="modal-lightbox" id="galleryModal">
+    <div class="modal-content-box">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="placeholder-box" style="min-height: 380px;">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+        <div class="placeholder-label" id="modalPlaceholderLabel">[Project Image Placeholder]</div>
+        <div class="placeholder-subtext">Detailed Engineering Project Breakdown & Technical Documentation</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>

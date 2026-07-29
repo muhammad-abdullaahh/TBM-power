@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TBM Power | Electrical Engineering & Power Solutions</title>
+  <meta name="description"
+    content="Reliable power solutions, electrical engineering, industrial automation, and power distribution systems for modern industries by TBM Power.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Page Loading Animation -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-spinner"></div>
+    <div style="color: var(--white); font-weight: 600; letter-spacing: 1px;">TBM POWER</div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <div class="container navbar">
+      <!-- Left: Company Logo -->
+      <a href="index.html" class="logo">
+        <img src="Images/Logo.jpg" alt="TBM Power Logo" class="logo-img">
+        <span>TBM Power</span>
+      </a>
+
+      <!-- Right: Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Side -->
+      <div class="hero-content reveal fade-up">
+        <div class="badge-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          Industrial Electrical Engineering
+        </div>
+        <h1>Reliable Power Solutions for Modern Industries</h1>
+        <p>Delivering high-voltage substations, industrial automation, turnkey power distribution, and engineering
+          consultancy with uncompromised safety and efficiency.</p>
+        <div class="hero-cta">
+          <a href="services.html" class="btn btn-primary">
+            Explore Services
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="hero-image-wrap reveal fade-left delay-200">
+        <img src="Images/Hero image.png" alt="TBM Power - Industrial Power Solutions" class="hero-img">
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ABOUT COMPANY -->
+  <section class="section-padding bg-light" id="about">
+    <div class="container about-grid">
+      <!-- Left Column -->
+      <div class="about-image-wrap reveal fade-right">
+        <img src="Images/Banner.png" alt="TBM Corporate Headquarters & Engineering Complex" class="about-img">
+
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="about-content reveal fade-up delay-200">
+        <div class="badge-tag">About Our Company</div>
+        <h2 class="section-title">Pioneering Power Engineering & Infrastructure Solutions</h2>
+        <p>TBM Power is a premier electrical engineering firm specializing in complex power distribution, grid
+          integration, and heavy industrial automation. Over the past two decades, we have established ourselves as
+          trusted engineering partners for industrial multi-nationals and public energy sectors.</p>
+        <p>Our dedicated team of certified electrical engineers and commissioning technicians combines deep technical
+          expertise with advanced diagnostic technologies. From initial feasibility studies to full-scale turnkey
+          installation, we ensure operational continuity and maximum energy efficiency.</p>
+        <p>We are driven by a commitment to zero-downtime performance, robust electrical safety standards, and
+          sustainable power management systems designed to power the industries of tomorrow.</p>
+        <div class="about-highlights">
+          <div class="about-check-item">
+            <div class="about-check-icon">✓</div>
+            <span>Turnkey Engineering</span>
+          </div>
+          <div class="about-check-item">
+            <div class="about-check-icon">✓</div>
+            <span>Smart Grid Integration</span>
+          </div>
+          <div class="about-check-item">
+            <div class="about-check-icon">✓</div>
+            <span>IEEE Compliance</span>
+          </div>
+          <div class="about-check-item">
+            <div class="about-check-icon">✓</div>
+            <span>24/7 Emergency Support</span>
+          </div>
+        </div>
+
+        <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: COMPANY STATISTICS -->
+  <section class="section-padding bg-navy">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal zoom-in">
+          <div class="stat-number" data-target="20" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card reveal zoom-in delay-100">
+          <div class="stat-number" data-target="150" data-suffix="+">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal zoom-in delay-200">
+          <div class="stat-number" data-target="80" data-suffix="+">0</div>
+          <div class="stat-label">Corporate Clients</div>
+        </div>
+        <div class="stat-card reveal zoom-in delay-300">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: OUR SERVICES -->
+  <section class="section-padding" id="services">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Core Expertise</div>
+        <h2 class="section-title">Comprehensive Engineering Services</h2>
+        <p class="section-subtitle">Delivering high-performance electrical solutions tailored to complex industrial
+          operations and utility networks.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal fade-up">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3>Electrical Installation</h3>
+          <p>Heavy-duty industrial wiring, switchgear setup, transformer installation, and high-voltage grid connections
+            executed with strict safety controls.</p>
+          <a href="services.html" class="service-link">
+            Explore Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal fade-up delay-100">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3>Power Distribution</h3>
+          <p>End-to-end electrical architecture for substations, medium-voltage distribution systems, and load balance
+            optimization.</p>
+          <a href="services.html" class="service-link">
+            Explore Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal fade-up delay-200">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+              </path>
+            </svg>
+          </div>
+          <h3>Industrial Automation</h3>
+          <p>PLC programming, SCADA supervisory controls, motor control centers (MCC), and automated industrial process
+            controls.</p>
+          <a href="services.html" class="service-link">
+            Explore Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal fade-up">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+              </path>
+            </svg>
+          </div>
+          <h3>Maintenance Services</h3>
+          <p>Preventive maintenance programs, thermal imaging diagnostics, relay calibration, and round-the-clock
+            emergency repairs.</p>
+          <a href="services.html" class="service-link">
+            Explore Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal fade-up delay-100">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+          </div>
+          <h3>Energy Solutions</h3>
+          <p>Power factor correction, energy audit surveys, solar microgrid integration, and energy storage systems for
+            industrial plants.</p>
+          <a href="services.html" class="service-link">
+            Explore Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal fade-up delay-200">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3>Engineering Consultancy</h3>
+          <p>Short-circuit arc flash analysis, load flow studies, technical drafting, compliance verification, and
+            expert engineering design.</p>
+          <a href="services.html" class="service-link">
+            Explore Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FEATURED PROJECTS -->
+  <section class="section-padding bg-light" id="projects">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Showcasing engineering breakthroughs across heavy industry, infrastructure, and
+          commercial facilities.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal fade-up">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">132kV Substation Grid Integration</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Substations & Transmission</div>
+            <h3>132kV Substation Turnkey Expansion</h3>
+            <p>Complete design, supply, installation, and commissioning of a 132kV GIS substation for a major
+              manufacturing hub.</p>
+            <a href="projects.html" class="btn btn-outline" style="width: 100%;">View Details</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal fade-up delay-100">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">Steel Plant SCADA & MCC Setup</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Industrial Automation</div>
+            <h3>Automated Steel Rolling Mill PLC System</h3>
+            <p>Implementation of Siemens S7-1500 PLC & WinCC SCADA system automating heavy steel furnace operations.</p>
+            <a href="projects.html" class="btn btn-outline" style="width: 100%;">View Details</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal fade-up delay-200">
+          <div class="project-image-box">
+            <div class="placeholder-box">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <div class="placeholder-label">[Project Image Placeholder]</div>
+              <div class="placeholder-subtext">5MW Industrial Solar Grid</div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Renewable Energy</div>
+            <h3>5MW Microgrid & Solar Integration</h3>
+            <p>Hybrid solar rooftop array with automated power factor control panels reducing grid reliance by 42%.</p>
+            <a href="projects.html" class="btn btn-outline" style="width: 100%;">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PRODUCTS -->
+  <section class="section-padding" id="products">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Equipment Catalog</div>
+        <h2 class="section-title">Premium Electrical Products</h2>
+        <p class="section-subtitle">Certified high-voltage transformers, switchgears, and control equipment built to
+          IEEE and IEC standards.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card reveal fade-up">
+          <div class="product-image-box">
+            <div class="placeholder-box light-variant">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2v20M2 12h20" />
+              </svg>
+              <div class="placeholder-label">[Transformer Placeholder]</div>
+              <div class="placeholder-subtext">Oil-Immersed Step-Down Transformer</div>
+            </div>
+          </div>
+          <h3>Industrial Oil-Cooled Transformers</h3>
+          <p>Heavy duty power transformers ranging from 500kVA to 25MVA for industrial power step-down applications.</p>
+          <a href="products.html" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal fade-up delay-100">
+          <div class="product-image-box">
+            <div class="placeholder-box light-variant">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+              </svg>
+              <div class="placeholder-label">[Electrical Equipment Placeholder]</div>
+              <div class="placeholder-subtext">MV Vacuum Switchgear Panel</div>
+            </div>
+          </div>
+          <h3>Medium Voltage Switchgear Panels</h3>
+          <p>11kV/33kV indoor and outdoor vacuum circuit breaker switchgears with arc proof safety features.</p>
+          <a href="products.html" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal fade-up delay-200">
+          <div class="product-image-box">
+            <div class="placeholder-box light-variant">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+              <div class="placeholder-label">[Electrical Equipment Placeholder]</div>
+              <div class="placeholder-subtext">Smart Motor Control Center (MCC)</div>
+            </div>
+          </div>
+          <h3>Smart PLC Control Enclosures</h3>
+          <p>Custom fabricated NEMA-4X stainless steel control cabinets with integrated VFDs and PLC modules.</p>
+          <a href="products.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: WHY CHOOSE US -->
+  <section class="section-padding bg-light" id="why-choose-us">
+    <div class="container why-grid">
+      <!-- Left Column: Image -->
+      <div class="why-image-wrap reveal fade-right">
+        <div class="placeholder-box">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+            </path>
+          </svg>
+          <div class="placeholder-label">[Electrical Equipment Placeholder]</div>
+          <div class="placeholder-subtext">Precision Diagnostic Equipment & High-Voltage Testing Lab</div>
+        </div>
+      </div>
+
+      <!-- Right Column: Features List -->
+      <div class="why-content reveal fade-up delay-200">
+        <div class="badge-tag">Why Choose Us</div>
+        <h2 class="section-title">Industry-Leading Reliability & Technical Mastery</h2>
+        <p>We combine rigorous engineering standards, certified personnel, and modern technology to deliver
+          zero-compromise electrical infrastructure.</p>
+
+        <div class="why-features">
+          <div class="why-feature-item">
+            <div class="why-check-icon">✓</div>
+            <div class="why-feature-text">
+              <h4>Experienced Engineers</h4>
+              <p>Licensed Professional Engineers with 15+ years field experience.</p>
+            </div>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-check-icon">✓</div>
+            <div class="why-feature-text">
+              <h4>Modern Equipment</h4>
+              <p>State-of-the-art Megger calibration & infrared diagnostics.</p>
+            </div>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-check-icon">✓</div>
+            <div class="why-feature-text">
+              <h4>Certified Professionals</h4>
+              <p>ISO 9001:2015 & NFPA 70E safety certified teams.</p>
+            </div>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-check-icon">✓</div>
+            <div class="why-feature-text">
+              <h4>Quality Assurance</h4>
+              <p>Multilevel testing, relay verification & warranty coverage.</p>
+            </div>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-check-icon">✓</div>
+            <div class="why-feature-text">
+              <h4>Timely Delivery</h4>
+              <p>Strict milestone management ensuring projects launch on schedule.</p>
+            </div>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-check-icon">✓</div>
+            <div class="why-feature-text">
+              <h4>24/7 Support</h4>
+              <p>Rapid emergency dispatch team for critical plant breakdowns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: OUR PROCESS -->
+  <section class="section-padding bg-navy" id="process">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Workflow</div>
+        <h2 class="section-title">Our Execution Process</h2>
+        <p class="section-subtitle">A methodical, step-by-step engineering methodology ensuring seamless execution from
+          blueprint to energization.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step reveal fade-up">
+          <div class="process-number">01</div>
+          <h4>Consultation</h4>
+          <p>Initial site audit, technical requirement gathering & load analysis.</p>
+        </div>
+
+        <div class="process-step reveal fade-up delay-100">
+          <div class="process-number">02</div>
+          <h4>Planning</h4>
+          <p>Feasibility studies, single-line diagrams & budget allocation.</p>
+        </div>
+
+        <div class="process-step reveal fade-up delay-200">
+          <div class="process-number">03</div>
+          <h4>Design</h4>
+          <p>Detailed CAD drafting, short-circuit calculations & equipment spec.</p>
+        </div>
+
+        <div class="process-step reveal fade-up delay-300">
+          <div class="process-number">04</div>
+          <h4>Implementation</h4>
+          <p>On-site installation, cable pulling & switchgear assembly.</p>
+        </div>
+
+        <div class="process-step reveal fade-up delay-400">
+          <div class="process-number">05</div>
+          <h4>Testing</h4>
+          <p>Primary injection, insulation resistance & high-pot energization testing.</p>
+        </div>
+
+        <div class="process-step reveal fade-up delay-400">
+          <div class="process-number">06</div>
+          <h4>Maintenance</h4>
+          <p>Continuous SLA monitoring, preventive service & 24/7 support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CLIENT LOGOS CAROUSEL -->
+  <section class="section-padding bg-light" style="padding: 4rem 0;">
+    <div class="container">
+      <div
+        style="text-align: center; margin-bottom: 2rem; font-size: 0.9rem; font-weight: 700; color: var(--gray-600); letter-spacing: 1.5px; text-transform: uppercase;">
+        Trusted By Industry Leaders Worldwide
+      </div>
+      <div class="logo-carousel-wrap">
+        <div class="logo-carousel-track">
+          <!-- Logo Placeholders -->
+          <div class="logo-item"><span>[Client Logo 1]</span></div>
+          <div class="logo-item"><span>[Client Logo 2]</span></div>
+          <div class="logo-item"><span>[Client Logo 3]</span></div>
+          <div class="logo-item"><span>[Client Logo 4]</span></div>
+          <div class="logo-item"><span>[Client Logo 5]</span></div>
+          <div class="logo-item"><span>[Client Logo 6]</span></div>
+          <!-- Cloned for Infinite Scroll -->
+          <div class="logo-item"><span>[Client Logo 1]</span></div>
+          <div class="logo-item"><span>[Client Logo 2]</span></div>
+          <div class="logo-item"><span>[Client Logo 3]</span></div>
+          <div class="logo-item"><span>[Client Logo 4]</span></div>
+          <div class="logo-item"><span>[Client Logo 5]</span></div>
+          <div class="logo-item"><span>[Client Logo 6]</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: TESTIMONIALS SLIDER -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Testimonials</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Direct feedback from plant managers, chief engineering officers, and facility
+          directors.</p>
+      </div>
+
+      <div class="testimonial-slider-container reveal zoom-in">
+        <button class="slider-arrow slider-prev" id="testimonialPrev" aria-label="Previous Testimonial">❮</button>
+
+        <div style="overflow: hidden;">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slide 1 -->
+            <div class="testimon[Hero Image Placeholder]ial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  "TBM Power executed our 132kV substation upgrade 3 weeks ahead of schedule. Their technical rigor,
+                  adherence to IEEE safety guidelines, and flawless energization were outstanding."
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-photo-box">
+                    <div class="placeholder-box light-variant" style="min-height: 100%; border: none; padding: 0;">
+                      <div class="placeholder-label" style="font-size: 0.65rem;">[Client Photo]</div>
+                    </div>
+                  </div>
+                  <div class="author-info">
+                    <h4>Robert Sterling</h4>
+                    <p>Chief Operations Officer, Apex Industrial Steel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-quote">
+                  "The SCADA & PLC automation system implemented by TBM Power has cut our plant downtime by over 60%.
+                  Their 24/7 maintenance support team gives us complete peace of mind."
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-photo-box">
+                    <div class="placeholder-box light-variant" style="min-height: 100%; border: none; padding: 0;">
+                      <div class="placeholder-label" style="font-size: 0.65rem;">[Client Photo]</div>
+                    </div>
+                  </div>
+                  <div class="author-info">
+                    <h4>Elena Rostova</h4>
+                    <p>Head of Infrastructure, Global Energy Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-arrow slider-next" id="testimonialNext" aria-label="Next Testimonial">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11: GALLERY -->
+  <section class="section-padding bg-light" id="gallery">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Visual Showcase</div>
+        <h2 class="section-title">Engineering Gallery</h2>
+        <p class="section-subtitle">Take a look inside our high-voltage projects, assembly labs, and field operations.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filter-nav reveal fade-up">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="substation">Substations</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+        <button class="filter-btn" data-filter="equipment">Equipment</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="gallery-masonry">
+        <div class="gallery-item reveal fade-up" data-category="substation">
+          <div class="placeholder-box">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+            </svg>
+            <div class="placeholder-label">[Project Image Placeholder]</div>
+            <div class="placeholder-subtext">High-Voltage Substation Yard</div>
+          </div>
+          <div class="gallery-overlay">
+            <h4>Outdoor Switchyard 132kV</h4>
+            <span>Substations</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal fade-up delay-100" data-category="automation">
+          <div class="placeholder-box">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+            </svg>
+            <div class="placeholder-label">[Project Image Placeholder]</div>
+            <div class="placeholder-subtext">SCADA Control Room Center</div>
+          </div>
+          <div class="gallery-overlay">
+            <h4>Central SCADA Control Center</h4>
+            <span>Automation</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal fade-up delay-200" data-category="equipment">
+          <div class="placeholder-box">
+            <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+            </svg>
+            <div class="placeholder-label">[Transformer Placeholder]</div>
+            <div class="placeholder-subtext">25MVA Power Transformer</div>
+          </div>
+          <div class="gallery-overlay">
+            <h4>25MVA Power Transformer Assembly</h4>
+            <span>Equipment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12: CONTACT -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="section-title-wrap reveal fade-up">
+        <div class="badge-tag">Get In Touch</div>
+        <h2 class="section-title">Contact Our Engineering Team</h2>
+        <p class="section-subtitle">Reach out for project consultations, technical tenders, emergency repairs, or site
+          surveys.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Info -->
+        <div class="contact-info-wrap reveal fade-right">
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Phone Number</h4>
+              <p>+1 (800) 555-VOLT / +1 (555) 019-2834</p>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email Address</h4>
+              <p>info@tbmpower.com / support@tbmpower.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Office Address</h4>
+              <p>TBM Power Tower, Suite 1200, Industrial Grid District, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="contact-card-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Business Hours</h4>
+              <p>Mon - Fri: 8:00 AM - 6:00 PM (Emergency Dispatch 24/7)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Contact Form -->
+        <div class="contact-form-card reveal fade-left delay-200">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" class="form-control" placeholder="John Doe">
+              <div class="form-error-msg"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" class="form-control" placeholder="john@company.com">
+              <div class="form-error-msg"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 000-0000">
+              <div class="form-error-msg"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details / Message *</label>
+              <textarea id="message" rows="4" class="form-control"
+                placeholder="Describe your power engineering requirements..."></textarea>
+              <div class="form-error-msg"></div>
+            </div>
+
+            <button type="submit" class="btn btn-orange" style="width: 100%;">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+
+            <div class="form-success-banner" id="formSuccessBanner">
+              ✓ Thank you! Your message has been received. An electrical engineer will contact you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Google Maps Placeholder -->
+      <div class="map-placeholder-wrap reveal fade-up delay-300">
+        <div class="placeholder-box light-variant">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="1 6 1 22 8 18 15 22 22 18 22 2 15 6 8 2 1 6"></polygon>
+            <line x1="8" y1="2" x2="8" y2="18"></line>
+            <line x1="15" y1="6" x2="15" y2="22"></line>
+          </svg>
+          <div class="placeholder-label">[Google Maps Placeholder]</div>
+          <div class="placeholder-subtext">Interactive Map View | Latitude: 40.7128° N, Longitude: 74.0060° W</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <img src="Images/Logo.jpg" alt="TBM Power Logo" class="logo-img">
+            <span>TBM Power</span>
+          </a>
+          <p>Delivering heavy industrial electrical engineering, high-voltage substation solutions, and smart grid
+            automation across global industries.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="Twitter">tw</a>
+            <a href="#" class="social-icon" aria-label="Facebook">fb</a>
+            <a href="#" class="social-icon" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects Portfolio</a>
+            <a href="products.html">Product Catalog</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Electrical Installation</a>
+            <a href="services.html">Power Distribution</a>
+            <a href="services.html">Industrial Automation</a>
+            <a href="services.html">Maintenance Services</a>
+            <a href="services.html">Energy Solutions</a>
+            <a href="services.html">Engineering Consultancy</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Details -->
+        <div>
+          <h4 class="footer-title">Contact Info</h4>
+          <div class="footer-links" style="color: var(--gray-400);">
+            <p><strong>HQ:</strong> Industrial Grid District, NY 10001</p>
+            <p><strong>Phone:</strong> +1 (800) 555-VOLT</p>
+            <p><strong>Email:</strong> info@tbmpower.com</p>
+            <p><strong>24/7 Hotline:</strong> +1 (555) 911-POWER</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 TBM Power Solutions. All Rights Reserved.</div>
+        <div>Designed for Industrial Excellence</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox for Gallery -->
+  <div class="modal-lightbox" id="galleryModal">
+    <div class="modal-content-box">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="placeholder-box" style="min-height: 380px;">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+        </svg>
+        <div class="placeholder-label" id="modalPlaceholderLabel">[Project Image Placeholder]</div>
+        <div class="placeholder-subtext">High Resolution Engineering Image Preview</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll-to-Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="12" y1="19" x2="12" y2="5" />
+      <polyline points="5 12 12 5 19 12" />
+    </svg>
+  </button>
+
+  <!-- Vanilla JS Engine -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
