@@ -1173,6 +1173,10 @@ img {
   cursor: pointer;
 }
 
+.project-card.gallery-item {
+  height: auto;
+}
+
 .gallery-item .placeholder-box {
   transition: var(--transition-normal);
 }
