@@ -1808,3 +1808,38 @@ img {
     height: 160px;
   }
 }
+
+/* ==========================================================================
+   ADMIN & CART NAV BUTTONS
+   ========================================================================== */
+
+/* Cart link — subtle highlight */
+a.cart-link.nav-link {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Admin button — stands out as a filled pill */
+a.admin-btn.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--orange-accent);
+  color: #fff !important;
+  padding: 7px 16px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  transition: var(--transition-fast);
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
+}
+
+a.admin-btn.nav-link:hover {
+  background: var(--orange-hover);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.45);
+  transform: translateY(-1px);
+}
+

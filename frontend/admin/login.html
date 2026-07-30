@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - TBM Power</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-card">
+            <h2>TBM Admin Portal</h2>
+            <form id="adminLoginForm">
+                <input type="text" id="username" class="form-control" placeholder="Email Address" required>
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                <div id="loginError" style="color: #e74c3c; margin-bottom: 10px; font-weight: bold;"></div>
+                <button type="submit" class="btn btn-primary" id="loginBtn">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- We need the base api.js for fetch logic -->
+    <script src="../js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

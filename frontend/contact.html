@@ -119,27 +119,44 @@
           <form id="contactForm" novalidate>
             <div class="form-group">
               <label for="name" class="form-label">Full Name *</label>
-              <input type="text" id="name" class="form-control" placeholder="John Doe">
-              <div class="form-error-msg"></div>
-            </div>
-
-            <div class="form-group">
-              <label for="email" class="form-label">Email Address *</label>
-              <input type="email" id="email" class="form-control" placeholder="john@company.com">
-              <div class="form-error-msg"></div>
+              <input type="text" id="name" class="form-control" required placeholder="John Doe">
             </div>
 
             <div class="form-group">
               <label for="phone" class="form-label">Phone Number *</label>
-              <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 000-0000">
-              <div class="form-error-msg"></div>
+              <input type="tel" id="phone" class="form-control" required placeholder="+92 300 0000000">
             </div>
 
             <div class="form-group">
-              <label for="message" class="form-label">Project Details / Message *</label>
-              <textarea id="message" rows="4" class="form-control" placeholder="Tell us about your technical specifications or project scope..."></textarea>
-              <div class="form-error-msg"></div>
+              <label for="email" class="form-label">Email Address (Optional)</label>
+              <input type="email" id="email" class="form-control" placeholder="john@company.com">
             </div>
+            
+            <div class="form-group">
+              <label for="city" class="form-label">City (Optional)</label>
+              <input type="text" id="city" class="form-control" placeholder="Karachi">
+            </div>
+
+            <div class="form-group">
+              <label for="region" class="form-label">Region *</label>
+              <input type="text" id="region" class="form-control" required placeholder="Sindh">
+            </div>
+
+            <div class="form-group">
+              <label for="system_type" class="form-label">System Type *</label>
+              <select id="system_type" class="form-control" required>
+                <option value="on_grid">On-Grid</option>
+                <option value="off_grid">Off-Grid</option>
+                <option value="hybrid">Hybrid</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="monthly_bill" class="form-label">Monthly Bill Range *</label>
+              <input type="text" id="monthly_bill" class="form-control" required placeholder="e.g. 10000-20000">
+            </div>
+            
+            <div id="contactError" style="color: #dc3545; font-weight: bold; margin-bottom: 15px;"></div>
 
             <button type="submit" class="btn btn-orange" style="width: 100%;">
               Send Message
@@ -217,6 +234,8 @@
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
   </button>
+  <script src="js/api.js"></script>
+  <script src="js/contact.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

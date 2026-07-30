@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders - TBM Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                TBM Admin
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html">Dashboard</a>
+                <a href="orders.html">Orders</a>
+                <a href="products.html">Products</a>
+                <a href="leads.html">Solar Leads</a>
+                <a href="#" id="logoutBtn" style="margin-top: auto; border-top: 1px solid #444;">Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header-bar">
+                <h1>Manage Orders</h1>
+                <div>
+                    <select id="statusFilter" class="form-control" style="width: 200px; margin-bottom: 0;">
+                        <option value="">All Statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="shipped">Shipped</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card" style="padding: 0; overflow-x: auto;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Total Amount</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersTableBody">
+                        <tr><td colspan="6" style="text-align: center;">Loading orders...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- Order Details Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <h2 style="margin-bottom: 15px;">Order Details</h2>
+            <div id="orderDetailsContent" style="margin-bottom: 20px;"></div>
+            <div style="border-top: 1px solid #ddd; padding-top: 15px;">
+                <label style="display: block; font-weight: bold; margin-bottom: 5px;">Update Status:</label>
+                <div style="display: flex; gap: 10px;">
+                    <select id="updateStatusSelect" class="form-control" style="margin-bottom: 0;">
+                        <option value="pending">Pending</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="shipped">Shipped</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                    <button id="saveStatusBtn" class="btn btn-primary">Save</button>
+                    <button id="closeModalBtn" class="btn" style="background: #ccc;">Close</button>
+                </div>
+                <div id="updateMsg" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html>

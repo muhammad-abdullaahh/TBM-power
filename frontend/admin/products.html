@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products - TBM Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <style>
+        .product-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .product-form-grid .full-width { grid-column: 1 / -1; }
+        .image-preview { width: 100%; max-height: 200px; object-fit: cover; border-radius: 4px; margin-top: 10px; display: none; }
+        .upload-area { border: 2px dashed #ccc; padding: 20px; text-align: center; border-radius: 4px; cursor: pointer; }
+        .upload-area:hover { border-color: var(--admin-secondary); }
+        .form-group { margin-bottom: 12px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 4px; font-size: 0.9em; }
+        .product-img-thumb { width: 50px; height: 50px; object-fit: cover; border-radius: 4px; }
+        .action-btn { padding: 4px 10px; border: none; border-radius: 4px; cursor: pointer; font-size: 0.82em; font-weight: bold; }
+        .edit-btn { background: #3498db; color: #fff; }
+        .delete-btn { background: #e74c3c; color: #fff; margin-left: 5px; }
+        .product-actions { display: flex; gap: 6px; }
+    </style>
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">TBM Admin</div>
+            <nav class="sidebar-nav">
+                <a href="index.html">Dashboard</a>
+                <a href="orders.html">Orders</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="leads.html">Solar Leads</a>
+                <a href="#" id="logoutBtn" style="margin-top: auto; border-top: 1px solid #444;">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="header-bar">
+                <h1>Manage Products</h1>
+                <button class="btn btn-primary" id="openAddModalBtn">+ Add Product</button>
+            </div>
+
+            <!-- Category Quick-Add -->
+            <div class="card" style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 15px;">Quick Add Category</h3>
+                <form id="addCategoryForm" style="display: flex; gap: 15px; align-items: flex-end;">
+                    <div class="form-group" style="margin-bottom: 0; flex: 1;">
+                        <label>Category Name</label>
+                        <input type="text" id="catName" class="form-control" placeholder="e.g. Solar Panels" required>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0; flex: 1;">
+                        <label>Slug</label>
+                        <input type="text" id="catSlug" class="form-control" placeholder="e.g. solar-panels" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: auto; white-space: nowrap;">Add Category</button>
+                </form>
+                <div id="catMsg" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+
+            <div class="card" style="padding: 0; overflow-x: auto;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsTableBody">
+                        <tr><td colspan="7" style="text-align:center;">Loading products...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- Add / Edit Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content" style="max-width: 680px;">
+            <h2 id="modalTitle" style="margin-bottom: 20px;">Add Product</h2>
+            <form id="productForm">
+                <input type="hidden" id="editProductId">
+
+                <div class="product-form-grid">
+                    <div class="form-group">
+                        <label>Product Name *</label>
+                        <input type="text" id="prodName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Slug *</label>
+                        <input type="text" id="prodSlug" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Category *</label>
+                        <select id="prodCategory" class="form-control" required>
+                            <option value="">Loading categories...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Stock Quantity *</label>
+                        <input type="number" id="prodStock" class="form-control" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Original Price (Rs) *</label>
+                        <input type="number" id="prodOriginalPrice" class="form-control" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sale Price (Rs) <span style="color:#888; font-weight:normal;">(optional)</span></label>
+                        <input type="number" id="prodSalePrice" class="form-control" step="0.01" min="0" placeholder="Leave blank for no discount">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Description <span style="color:#888; font-weight:normal;">(optional)</span></label>
+                        <textarea id="prodDescription" rows="3" class="form-control" placeholder="Product description..."></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Technical Specs (Optional)</label>
+                        <div id="specsContainer" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px;">
+                            <!-- Dynamically generated key-value rows -->
+                        </div>
+                        <button type="button" class="btn" id="addSpecRowBtn" style="width: auto; font-size: 0.85rem; padding: 5px 10px; background: #eaeaea; color: #333;">+ Add Spec Row</button>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Product Image</label>
+                        <div class="upload-area" id="uploadArea" onclick="document.getElementById('imageUploadInput').click();">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <p style="margin-top: 10px; color: #888;">Click to upload an image</p>
+                        </div>
+                        <input type="file" id="imageUploadInput" accept="image/*" style="display:none;">
+                        <img id="imagePreview" class="image-preview" alt="Image Preview">
+                        <input type="hidden" id="prodImageUrl">
+                        <div id="uploadMsg" style="font-size: 0.85em; color: #666; margin-top: 5px;"></div>
+                    </div>
+                </div>
+
+                <div id="productFormError" style="color: #e74c3c; font-weight: bold; margin-top: 10px;"></div>
+                <div style="display: flex; gap: 10px; margin-top: 20px; justify-content: flex-end;">
+                    <button type="button" id="cancelModalBtn" class="btn" style="background:#ccc;">Cancel</button>
+                    <button type="submit" id="saveProductBtn" class="btn btn-primary" style="width: auto;">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
