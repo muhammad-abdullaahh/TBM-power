@@ -126,6 +126,43 @@ async function loadProductDetail() {
             </div>
         `;
 
+        // --- DYNAMIC SEO UPDATES ---
+        document.title = product.name + " | TBM Power";
+        
+        let metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            const shortDesc = (product.description || "").substring(0, 160) || "Product details for " + product.name;
+            metaDesc.setAttribute("content", shortDesc);
+        }
+        
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonical);
+        }
+        canonical.setAttribute('href', "https://tbmpower.com.pk/product-detail.html?slug=" + slug);
+
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.name,
+            "description": product.description || "",
+            "image": product.image_url || "https://tbmpower.com.pk/Images/Logo.jpg",
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "PKR",
+                "price": product.sale_price ? product.sale_price : product.original_price,
+                "availability": isOutOfStock ? "https://schema.org/OutOfStock" : "https://schema.org/InStock"
+            }
+        };
+
+        let schemaScript = document.createElement('script');
+        schemaScript.type = 'application/ld+json';
+        schemaScript.text = JSON.stringify(schema, null, 2);
+        document.head.appendChild(schemaScript);
+        // ---------------------------
+
         // Add to Cart Logic
         if (!isOutOfStock) {
             document.getElementById('addToCartBtn').addEventListener('click', async () => {

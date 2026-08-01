@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (logoutBtn) {
         logoutBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            clearAdminToken();
-            window.location.href = 'login.html';
+            window.location.href = '/index.html';
         });
     }
 

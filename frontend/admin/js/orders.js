@@ -58,7 +58,7 @@ function openOrderModal(orderId) {
     
     let itemsHtml = `<ul style="padding-left: 20px; margin-top: 10px; margin-bottom: 20px;">`;
     order.items.forEach(item => {
-        itemsHtml += `<li>${item.quantity}x ${item.product.name} @ Rs ${parseFloat(item.price).toLocaleString()}</li>`;
+        itemsHtml += `<li>${item.quantity}x ${item.product_name} @ Rs ${parseFloat(item.unit_price).toLocaleString()}</li>`;
     });
     itemsHtml += `</ul>`;
 
