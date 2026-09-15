@@ -34,6 +34,11 @@ app.include_router(cart_router)
 app.include_router(orders_router)
 app.include_router(admin_router)
 
+@app.get("/", tags=["Health Check"])
+async def root():
+    return {"status": "ok", "app": settings.APP_NAME, "docs": "/docs"}
+
 @app.get("/health", tags=["Health Check"])
 async def health_check():
     return {"status": "ok", "app": settings.APP_NAME}
+

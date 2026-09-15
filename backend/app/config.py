@@ -7,10 +7,10 @@ class Settings(BaseSettings):
 
     # Database
     # Using asyncpg driver, e.g., postgresql+asyncpg://postgres:password@localhost:5432/tbm_solar
-    DATABASE_URL: str
+    DATABASE_URL: str = "postgresql+asyncpg://postgres.cnhyqoshldxnruehxuas:9gQLwfbH2ukmaCSV@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres"
 
     # Auth
-    JWT_SECRET: str
+    JWT_SECRET: str = "tbm_power_super_secret_jwt_key_2026_xyz"
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
 
