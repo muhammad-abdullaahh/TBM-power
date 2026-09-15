@@ -1,27 +1,78 @@
-# Environments
+# Environments & Secrets
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.cert
+
+# Vercel
+.vercel/
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
 venv/
 env/
 .venv/
+ENV/
 
-# Databases
-*.sqlite3
-*.db
-Database/
-
-# Logs
-*.log
+# Node / Frontend
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Databases & Local Data
+*.sqlite3
+*.db
+Database/*.db
+Database/*.sqlite
+
+# Uploads & Media Files
+uploads/
+backend/uploads/
+**/uploads/**
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.svg
+*.ico
+*.mp4
+*.mov
+*.avi
+
+# Whitelist: Preserve static website branding images in frontend/Images
+!frontend/Images/
+!frontend/Images/**
+!frontend/Images/**/*
+!frontend/favicon.*
+
+# Logs
+*.log
 
 # OS generated files
 .DS_Store
@@ -31,9 +82,12 @@ yarn-error.log*
 .Trashes
 ehthumbs.db
 Thumbs.db
+[Dd]esktop.ini
 
 # IDEs and Editors
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
