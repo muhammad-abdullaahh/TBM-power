@@ -2,11 +2,12 @@ import sys
 import os
 import traceback
 
-# Ensure the root backend directory is at the top of sys.path
+# Ensure candidate directories are in sys.path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
-if parent_dir not in sys.path:
-    sys.path.insert(0, parent_dir)
+for p in [parent_dir, os.path.join(parent_dir, "backend"), os.getcwd()]:
+    if os.path.exists(p) and p not in sys.path:
+        sys.path.insert(0, p)
 
 import_error = None
 try:
