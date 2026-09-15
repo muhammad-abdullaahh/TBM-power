@@ -20,10 +20,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount local uploads directory so images can be served statically
+# Mount local uploads directory so images can be served statically (if writable)
 import os
-os.makedirs("uploads/products", exist_ok=True)
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+try:
+    os.makedirs("uploads/products", exist_ok=True)
+    app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+except OSError:
+    pass
 
 # Include Routers
 app.include_router(public_router)
